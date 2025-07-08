@@ -35,6 +35,14 @@ public class Missao {
         return nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setDificuldade(int dificuldade) {
+        this.dificuldade = dificuldade;
+    }
+
     public boolean adicionarAgente(Agente agente) {
         if(status) {
             System.out.println("Agente adicionado na missão!");
@@ -42,7 +50,7 @@ public class Missao {
         }
 
         if(!Agente.isStatus()){
-            System.out.println("O agente foi de F e não pode participar");
+            System.out.println("O agente morreu e não pode participar");
             return false;
         }
 

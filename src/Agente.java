@@ -7,7 +7,7 @@ public abstract class Agente {
     private int vidaAtual;
     private int vidaMaxima;
     private int experiencia;
-    private boolean status;
+    private static boolean status;
     private ArrayList<Equipamento> equipamentos = new ArrayList<>();
 
     public Agente(String nome, int nivel) {
