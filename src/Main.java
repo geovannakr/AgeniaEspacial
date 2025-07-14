@@ -391,13 +391,13 @@ public class Main {
         }
 
 
-        if (!m.validarParticipante){
+        if (!m.getMissaoParticipantes().isEmpty()){
             System.out.println("Número insuficiente de participantes para iniciar a missão.");
             return;
         }
 
 
-        m.iniciarMissoes();
+        m.iniciarMissao();
     }
 
 
